@@ -9,6 +9,7 @@
  * @link      http://www.opensource-socialnetwork.com/licence
  */
 $en = array(
-    'ossn:readmore' => 'Read More',   
+    'module:readmore:read:more' => 'Read More',
+    'module:readmore:close' => 'Close',
 );
 ossn_register_languages('en', $en); 

@@ -19,8 +19,8 @@ $(document).ready(function(){
         speed: 100,
         collapsedHeight: 200,
         heightMargin: 16,
-        moreLink: '<a href="#"><?php echo ossn_print('ossn:readmore');?></a>',
-        lessLink: '<a href="#"><?php echo ossn_print('close');?></a>',
+        moreLink: '<a style="line-height: 0px; margin-top: 4px; text-align: right;" href="#">' + Ossn.Print('module:readmore:read:more') + '</a>',
+        lessLink: '<a style="line-height: 0px; margin-top: 4px; text-align: right;" href="#">' + Ossn.Print('module:readmore:close') + '</a>',
         embedCSS: true,
         blockCSS: 'display: block; width: 100%;',
         startOpen: false,
@@ -174,7 +174,7 @@ $(document).ready(function(){
 
         setBoxHeights(current);
 
-        var collapsedHeight = current.data('collapsedHeight'),
+        var collapsedHeight = current.data('collapsedHeight') ,
             heightMargin = current.data('heightMargin');
 
         if (current.outerHeight(true) <= collapsedHeight + heightMargin) {
@@ -200,6 +200,7 @@ $(document).ready(function(){
 
           if (! $this.options.startOpen) {
             current.css({
+              'margin-bottom': '0px',
               height: collapsedHeight
             });
           }
