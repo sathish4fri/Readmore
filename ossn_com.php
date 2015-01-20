@@ -17,6 +17,8 @@ function ossn_ReadMore_init() {
 	ossn_load_js('jquery');
 	ossn_new_js('readmore', 'components/Readmore/js/readmoreorg');
 	ossn_load_js('readmore');
+	ossn_new_css('ossn.readmore', 'components/Readmore/css/readmore');
+	ossn_load_css('ossn.readmore');
    ossn_extend_view('js/opensource.socialnetwork', 'components/Readmore/js/readmore');
 }
 
