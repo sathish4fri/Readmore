@@ -322,6 +322,6 @@ $(document).ready(function(){
 
 Ossn.RegisterStartupFunction(function(){
     $(document).ready(function(){
-        $('.post-text, .comment-text p').readmore({startOpen: false, speed: 100});
+        $('.post-text').readmore({startOpen: false, speed: 100});
     });
 });  
