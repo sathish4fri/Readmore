@@ -13,8 +13,8 @@
 
 
 function ossn_ReadMore_init() {
-	ossn_extend_view('css/ossn.default', 'components/Readmore/css/readmore');
-	ossn_extend_view('js/opensource.socialnetwork', 'components/Readmore/js/needmore');
+	ossn_extend_view('css/ossn.default', 'css/readmore');
+	ossn_extend_view('js/opensource.socialnetwork', 'js/needmore');
 }
 
 
